@@ -14,7 +14,7 @@ An app to set random Google Street View in the world as a wallpaper.
 ```
 
 3. Fix an issue in street_view_randomizer according to https://github.com/diegopaiva1/street-view-randomizer/issues/1.
-<br>
+
 4. Run update.py to change the wallpaper.
 ```
 > uv run update.py
