@@ -1,7 +1,7 @@
 from street_view_randomizer import main, countries
 from glob import glob
-from os import getenv
-from os.path import getmtime, abspath
+from os import getenv, chdir
+from os.path import getmtime, abspath, dirname
 import ctypes
 class SVRArgs:
     def __init__(self):
@@ -17,6 +17,7 @@ class SVRArgs:
         self.fovs = [120]
         self.size = '640x640'
 
+chdir(dirname(__file__))
 main.run(SVRArgs())
 files = glob(abspath('./images/*/*.jpg'))
 latest = max(files, key=lambda x: getmtime(x))
