@@ -1,0 +1,9 @@
+[project]
+name = "street-view-wallpaper"
+version = "1.0"
+description = "An app to set random Google Street View in the world as a wallpaper."
+readme = "README.md"
+requires-python = ">=3.10.5"
+dependencies = [
+    "street-view-randomizer>=0.1.0",
+]
